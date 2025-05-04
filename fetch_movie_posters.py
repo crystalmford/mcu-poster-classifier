@@ -5,9 +5,11 @@ import re
 from PIL import Image
 import imagehash
 import time
+from dotenv import load_dotenv
 
 # === CONFIG ===
-API_KEY = "aaac1bb03b62b4a182acf1586ad71782"
+load_dotenv()
+API_KEY = os.getenv("TMDB_API_KEY")
 IMG_BASE_URL = "https://image.tmdb.org/t/p/original"
 HEADERS = {"Authorization": f"Bearer {API_KEY}"}
 
