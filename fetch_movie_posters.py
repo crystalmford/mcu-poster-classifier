@@ -107,7 +107,7 @@ def download_posters(title, tmdb_id, media_type, folder_path):
             temp_filename.unlink()
 
 # === MAIN LOOP ===
-base_dir = Path("marvel_posters")
+base_dir = Path("../marvel_posters")
 base_dir.mkdir(exist_ok=True)
 
 for phase, titles in titles_by_phase.items():
