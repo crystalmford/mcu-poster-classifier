@@ -40,6 +40,15 @@ The goal is to classify movie and show posters from the MCU into their correct p
 
 ## How to Run Locally
 
+Before running the poster download script, create a `.env` file in the root folder of the project and add your TMDB API key like this:
+
+```
+TMDB_API_KEY=your_tmdb_api_key_here
+```
+
+Make sure the `.env` file is not committed to version control (it’s already excluded via `.gitignore`).
+Optionally, you can use the included `.env.example` as a template.
+
 1. Clone the repository:
    `git clone https://github.com/crystalmford/mcu-poster-classifier.git`
    `cd mcu-poster-classifier`
@@ -64,3 +73,12 @@ Posters were automatically searched, filtered, and deduplicated using:
 The entire modeling process is also available as a Jupyter notebook:
 
 - [`marvel.ipynb`](marvel.ipynb)
+
+---
+
+## Project Setup Notes
+
+This repository includes a `.env.example` file.
+To use it, simply copy it and rename it to `.env`, then paste in your TMDB API key.
+
+The `.gitignore` file ensures that sensitive files and local clutter (like `.env`, `.venv`, cache files, and `.ipynb_checkpoints/`) are excluded from version control.
