@@ -58,9 +58,9 @@ The goal is to classify movie and show posters from the MCU into their correct p
 The dataset of MCU posters was created using the TMDb API.
 Posters were automatically searched, filtered, and deduplicated using:
 
-- [`data_collection/fetch_movie_posters.py`](data_collection/fetch_movie_posters.py)
+- [`fetch_movie_posters.py`](fetch_movie_posters.py)
 
 ### Notebook (Model Training + Evaluation)
 The entire modeling process is also available as a Jupyter notebook:
 
-- [`data_collection/marvel.ipynb`](data_collection/marvel.ipynb)
+- [`marvel.ipynb`](marvel.ipynb)
